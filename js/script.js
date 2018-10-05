@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("done");
             appData.expenses[expensesItem] = expensesCost;
         } else {
-            console.log("error"); // как возвращаться к предыдущей итерации??
+            if (i < 0) {i--}
         }
     }
 
