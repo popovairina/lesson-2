@@ -20,9 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
             && expensesItem != '' && expensesCost != '' && expensesItem.length < 50) {
             console.log("done");
             appData.expenses[expensesItem] = expensesCost;
-        } else {
-            if (i < 0) {i--}
-        }
+        } else if (i >= 0) {i--}
     }
 
     // Цикл while //
